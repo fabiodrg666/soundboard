@@ -1,5 +1,5 @@
 <? 
-require_once("functions.php0");
+require_once("functions.php");
 
 return getSoundFiles();
 

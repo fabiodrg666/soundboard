@@ -1,6 +1,8 @@
-<? 
+<?php 
 require_once("functions.php");
 
-return getSoundFiles();
+foreach(getSoundFiles() as $sound){ 
+    echo($sound . " "); 
+}
 
 ?>

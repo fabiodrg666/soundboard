@@ -1,5 +1,6 @@
 import requests
 from sys import argv
+import numpy as np
 
 def printUsage():
     print("Usage: " + argv[0] + " [command] [option]\nFor more info do " + argv[0] + "-h")
@@ -15,7 +16,6 @@ def printHelp():
 
 def getAllSounds():
     res = requests.get("http://spinlock.fe.up.pt/getAllSounds.php")
-    print(res)
     return res
 
 def playSound(snd):
@@ -27,7 +27,12 @@ elif len(argv) == 2:
     if argv[1] == "-h" or argv[1] == "--help":
         printHelp()
     elif argv[1] == "-l" or argv[1] == "--list":
-        print(getAllSounds())
+        print(getAllSounds().text.replace(' ', '\n'))
+    elif argv[1] == "-r" or argv[1]:
+        sounds = getAllSounds().text.split(' ')
+        np.random.shuffle(sounds)
+        playSound(sounds[0].split('.')[0])
+
 else:
     if argv[1] == "-p" or argv[1] == "--play":
         #if argv[2] in getAllSounds():

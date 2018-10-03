@@ -44,7 +44,7 @@ body {
     letter-spacing: 5px;
 }
  .main-wthree {
-    width: 52%;
+    width: 82%;
     margin: 0 auto 3%;
     background: rgba(216, 40, 76, 0.98);
     border: 10px solid #FFFDFE;
@@ -158,7 +158,7 @@ body {
 		margin: 53px auto 55px;
 	}
 	.main-wthree {
-		width: 58%;
+		width: 78%;
 	}
 }
 @media(max-width:1360px){

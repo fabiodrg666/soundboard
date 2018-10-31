@@ -34,12 +34,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="main-wthree">
 		<?php insertButtons(); ?>
 	</div>
+	<button><a href="/playrand.php">Random</a></button>
 <!--//mian-content-->
 <!-- copyright -->
 	<div class="copyright-w3-agile">
-		<p> Daniel Silva | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+		<p> IEEE UP SB - IT Dept | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
 	</div>
-<!-- //copyright --> 
+<!-- //copyright -->
 
 </body>
 </html>

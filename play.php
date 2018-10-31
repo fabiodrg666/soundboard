@@ -1,12 +1,21 @@
 <?php
 
+require 'functions.php';
+require 'vendor/autoload.php';
 
-require('functions.php');
+use wapmorgan\Mp3Info\Mp3Info;
 
 $file=$_GET['file'];
 
 if(!fileExists($file)){
 	die("die, you jerk.");
+}
+
+
+
+$audio = new Mp3Info("sounds/$file", true);
+if($audio->duration > 7){
+	die("too long, you fool.");
 }
 
 // Let the filtering begin!

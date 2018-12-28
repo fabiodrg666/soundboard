@@ -14,28 +14,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>IEEE UP SB Sounds</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-<meta name="keywords" content="Smooth Error Page template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web forms, Login sign up Responsive web Forms, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <!-- //Custom Theme files -->
 <!-- web font -->
-<link href="//fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!-- //web font -->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/play.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body>
-<!--mian-content-->
-<h1 style="font-family:'Monospace'">¯\_(ツ)_/¯</h1>
-	<div class="main-wthree">
-		<?php insertButtons(); ?>
+<body class="bg-dark">
+<!--main-content-->
+<div class="container-fluid" id="main_content">
+	<h1 class="text-center text-light my-3 py-2" style="font-family:'Monospace'">¯\_(ツ)_/¯</h1>
+	<div class="container">
+		<div class="row justify-content-center">
+			<?php insertButtons(); ?>
+			<a class="btn btn-outline-light btn-lg btn-block my-3" href="/playrand.php" role="button">Random</a>
+		</div>
 	</div>
-	<button><a href="/playrand.php">Random</a></button>
-<!--//mian-content-->
+</div>
+<!--//main-content-->
 <!-- copyright -->
 	<div class="copyright-w3-agile">
 		<p> IEEE UP SB - IT Dept | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>

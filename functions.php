@@ -19,9 +19,9 @@ function insertButtons(){
 	foreach(getSoundFiles() as $f){
 		$fname= substr($f, 0, strlen($f)-4); // 4 chars for '.mp3'
 		if(in_array($f, $nsfw)){
-			echo "<button class = \"nsfw\" title=\"NSFW\">{$fname}</button>";
+			echo "<button class = \"btn btn-danger m-1\" title=\"NSFW\">{$fname}</button>";
 		}else{
-			echo "<button>{$fname}</button>";
+			echo "<button class=\"btn btn-light m-1\">{$fname}</button>";
 		}
 		
 	}

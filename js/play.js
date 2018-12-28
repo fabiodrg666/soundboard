@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	console.log("ready!");
 
-	$("body>div>button").click(function () {
+	$("#main_content>div>button").click(function () {
 		$.ajax({
 				url: "play.php?file=" + encodeURIComponent($(this).text()) + ".mp3",
 				beforeSend: function (xhr) {

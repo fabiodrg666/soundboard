@@ -34,12 +34,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 </div>
-<!--//main-content-->
-<!-- copyright -->
-	<div class="copyright-w3-agile">
-		<p> IEEE UP SB - IT Dept | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
-	</div>
-<!-- //copyright -->
-
+<footer>
+<p>IEEE UP SB - IT Dept</p>
+</footer>
 </body>
 </html>
